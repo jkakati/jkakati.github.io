@@ -16,6 +16,9 @@ const configuration = {
 let room;
 let pc;
 
+$('.box').click(function(){
+    $(this).animate({opacity:0},1000) ;
+ });
 
 function onSuccess() {};
 function onError(error) {
@@ -117,3 +120,7 @@ function localDescCreated(desc) {
     onError
   );
 }
+
+// $('.box').click(function(){
+//     $(this).animate({opacity:0},1000) ;
+//  });
