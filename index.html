@@ -1,22 +1,43 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <script type='text/javascript' src='https://cdn.scaledrone.com/scaledrone.min.js'></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <title>Face2Face Interaction</title>
   <link rel="stylesheet" href="style.css" type="text/css"/>
   <script src="script.js" defer></script>
 </head>
+
 <body>
     <div class="copy">Send your URL to a friend to start a video call</div>
-    <div class="copy">My Video</div>
-    <video class="localVideo" id="localVideo" autoplay muted></video>
 
-    <div class="copy">Your Video</div>
+    <p><h1>My Video</h1>
+    <video class="localVideo" id="localVideo" autoplay muted>s</video>
 
-    <video class="remoteVideo" id="remoteVideo" autoplay></video>
+    <p><h1>Your Video</h1><br />
+    <video class="remoteVideo" id="remoteVideo" autoplay></video></p>
+    
+    <div id='overlay'>
+        <div class='box' id='b0'>do you a?</div>
+        <div class='box' id='b1'>do you b?</div>
+        <div class='box' id='b2'>do you c?</div>
+        <div class='box' id='b3'>do you d?</div>
+        <div class='box' id='b4'>do you e?</div>
+        <div class='box' id='b5'>do you f?</div>
+        <div class='box' id='b6'>do you g?</div>
+        <div class='box' id='b7'>do you h</div>
+        <div class='box' id='b8'>do you i?</div>
+    </div>
+    
+    
+    <script>
+     $('.box').click(function(){
+        $(this).animate({opacity:0},1000) ;
+     });
+    </script>
+</body>
 
-    <!-- <script src="script.js"></script> -->
-  </body>
-  </html>
+</html>
