@@ -3,6 +3,7 @@
 
 <head>
   <script type='text/javascript' src='https://cdn.scaledrone.com/scaledrone.min.js'></script>
+  <!-- load jqwuery and p5.js from remote servers-->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
@@ -12,7 +13,8 @@
 </head>
 
 <body>
-    <div class="copy">Send your URL to a friend to start a video call</div>
+
+    <div class="copy">Send your URL to a friend to start a video call. Please maximize your browser for best view!</div>
 
     <!-- <p><h1>My Video</h1> -->
     <video class="localVideo" id="localVideo" autoplay muted>s</video>
@@ -21,23 +23,38 @@
     <video class="remoteVideo" id="remoteVideo" autoplay></video></p>
     
     <div id='overlay'>
-        <div class='box' id='b0'>Are you a coffee or tea person?</div>
-        <div class='box' id='b1'>What is your favorite season?</div>
-        <div class='box' id='b2'>Are you a cat or dog person?</div>
-        <div class='box' id='b3'>What is your go to comfort food?</div>
-        <div class='box' id='b4'>Which is your favorite band?</div>
-        <div class='box' id='b5'>Did you help someone today?</div>
-        <div class='box' id='b6'>What is your favorite TV show?</div>
-        <div class='box' id='b7'>Who is your favorite Superhero?</div>
-        <div class='box' id='b8'>Do you prefer mountain or beach holiday?</div>
+        <div class='box'><div id="floater"></div><div id='b01'>Are you a coffee or tea person?</div></div>
+        <div class='box'><div id="floater"></div><div id='b02'>What is your favorite weather season?</div></div>
+        <div class='box'><div id="floater"></div><div id='b03'>Are you a cat or dog person?</div></div>
+        <div class='box'><div id="floater"></div><div id='b04'>What is your go to comfort food?</div></div>
+        <div class='box'><div id="floater"></div><div id='b05'>Which is your favorite band?</div></div>
+        <div class='box'><div id="floater"></div><div id='b06'>Did you help someone today?</div></div>
+        <div class='box'><div id="floater"></div><div id='b07'>What is your favorite TV show?</div></div>
+        <div class='box'><div id="floater"></div><div id='b08'>Who is your favorite Superhero?</div></div>
+        <div class='box'><div id="floater"></div><div id='b09'>Do you prefer mountain or beach holiday?</div></div>
+        <div class='box'><div id="floater"></div><div id='b10'>What is the most useful app on your phone?</div></div>
+        <div class='box'><div id="floater"></div><div id='b11'>What was your first smartphone?</div></div>
+        <div class='box'><div id="floater"></div><div id='b12'>What would be your ideal superpower?</div></div>
+        <div class='box'><div id="floater"></div><div id='b13'>What’s the next trip you have planned?</div></div>
+        <div class='box'><div id="floater"></div><div id='b14'>Do you have any pets? What are their names?</div></div>
+        <div class='box'><div id="floater"></div><div id='b15'>What is your spirit animal?</div></div>
+        <div class='box'><div id="floater"></div><div id='b16'>Do you have any hidden talents or surprising hobbies?</div></div>
+        <div class='box'><div id="floater"></div><div id='b17'>Are you consider yourself as a foodie?</div></div>
+        <div class='box'><div id="floater"></div><div id='b18'>What’s your favorite cuisine?</div></div>
+        <div class='box'><div id="floater"></div><div id='b19'>Do you like road trip?</div></div>
+        <div class='box'><div id="floater"></div><div id='b20'>If you could fly anywhere for free, where would you go?</div></div>
+        <div class='box'><div id="floater"></div><div id='b21'>What is your favorite sport?</div></div>
+        <div class='box'><div id="floater"></div><div id='b22'>Who is your favorite sportsperson?</div></div>
+        <div class='box'><div id="floater"></div><div id='b23'>Do you believe in alien?</div></div>
+        <div class='box'><div id="floater"></div><div id='b24'>What genre of music you like?</div></div>
+        <div class='box'><div id="floater"></div><div id='b25'>Who is your favorite singer?</div></div>
+        <div class='box'><div id="floater"></div><div id='b26'>Which is your favorite corner of the house?</div></div>
+        <div class='box'><div id="floater"></div><div id='b27'>What’s your favorite way to waste time?</div></div>
+        <div class='box'><div id="floater"></div><div id='b28'>If you opened a business, what kind of business would it be?</div></div>
+        <div class='box'><div id="floater"></div><div id='b29'>Which do you prefer: books or movies?</div></div>
+        <div class='box'><div id="floater"></div><div id='b30'>What was the last movie you watched?</div></div>
     </div>
-    
-    
-    <!-- <script>
-     $('.box').click(function(){
-        $(this).animate({opacity:0},1000) ;
-     });
-    </script> -->
+
 </body>
 
 </html>
