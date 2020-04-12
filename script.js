@@ -20,6 +20,10 @@ $('.box').click(function(){
     $(this).animate({opacity:0},1000) ;
  });
 
+$('.bigbox').click(function(){
+  $(this).animate({opacity:0},1000) ;
+});
+
 function onSuccess() {};
 function onError(error) {
   console.error(error);
