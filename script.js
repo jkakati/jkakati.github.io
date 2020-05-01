@@ -18,9 +18,33 @@ let pc;
 
 $('.box').click(function(){
     $(this).animate({opacity:0},1000) ;
- });
+});
+
+$('.boxC1').click(function(){
+  $(this).animate({opacity:0},1000) ;
+});
+
+$('.boxC2').click(function(){
+  $(this).animate({opacity:0},1000) ;
+});
+
+$('.boxC3').click(function(){
+  $(this).animate({opacity:0},1000) ;
+});
 
 $('.bigbox').click(function(){
+  $(this).animate({opacity:0},1000) ;
+});
+
+$('.bigboxC1').click(function(){
+  $(this).animate({opacity:0},1000) ;
+});
+
+$('.bigboxC2').click(function(){
+  $(this).animate({opacity:0},1000) ;
+});
+
+$('.bigboxC3').click(function(){
   $(this).animate({opacity:0},1000) ;
 });
 
